@@ -1,0 +1,11 @@
+let foodItems=["potato","tomato","chilli"];
+foodItems.push("guuu");
+console.log(foodItems);
+foodItems.pop("potato");
+console.log(foodItems);
+let companies=["bloomberg","microsoft","uber","google","ibm","netflix"]
+companies.push("amezon");
+companies.shift();
+companies.splice(2,1,"ola");
+
+console.log(companies);
