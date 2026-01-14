@@ -1,0 +1,22 @@
+//functions in javascript
+function myfunction(){
+    console.log("hello welcome to js");
+    console.log("i am learning js");
+}
+myfunction();
+function myfunction(msg,n){
+    console.log(msg*n)}
+myfunction();*/
+function sum(x,y){
+    console.log(x+y);
+}
+//or
+function sum(x,y){
+    s=x+y;
+    return s;
+}
+let val=sum(3,4);
+console.log(val);
+//arrow function
+
+
