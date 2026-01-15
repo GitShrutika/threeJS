@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in js</title>
+    <link rel="stylesheet" href="js2.css">
+</head>
+<body>
+    
+        <h2>hello java script</h2>
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+     <script src="js2.js"></script>
+</body>
+</html>
+  //DOM.
+//console.dir(document.body);
+//console.log(document.body);
+//let h2 = document.querySelector("h2");
+//console.dir(h2.innerText);
+//h2.innerText=h2.innerText+" from apna collage";
+let dives =document.querySelectorAll(".box")
+let idx=1;
+for (div of dives){
+
+div.innerText="new unique value"
+}
