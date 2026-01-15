@@ -1,0 +1,48 @@
+myfunction();
+function myfunction(msg,n){
+    console.log(msg*n)}
+myfunction();
+function sum(x,y){
+    console.log(x+y);
+}
+//or
+function sum(x,y){
+    s=x+y;
+    return s;
+}
+let val=sum(3,4);
+console.log(val);
+//count vovels from the str
+function countvowels(str){
+    let count=0;
+    for(const char of str){
+        console.log(str);
+        if(char==="a"||char==="e"||char==="i"||char==="o"||char==="u"){
+        count ++;}
+       
+    }
+    console.log(count);
+}
+//using array
+const vov=(str)=>{
+    let count=0;
+     for(const char of str){
+        console.log(str);
+        if(char==="a"||char==="e"||char==="i"||char==="o"||char==="u"){
+        count ++;}
+       
+    }
+    return count;
+
+};
+//for each loop in array
+let arr=[1,2,3,4,5];{
+    arr.forEach( function printVal(val){
+        console.log(val);
+    })
+}*/
+//using arrow
+let arr=[1,2,3,4,5];
+arr.forEach((val)=>{
+
+});
