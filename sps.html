@@ -1,0 +1,104 @@
+//sps.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sps.css">
+</head>
+<body>
+    <h1>rock paper scissors game</h1>
+    <div class="choices">
+        <div class="choice" id="rock">
+        <img src="./rock img.webp">
+        </div>
+        <div class="choice" id="paper">
+        <img src="./3.png">
+        </div>
+         <div class="choice" id="sissor">
+        <img src="./5.png">
+        </div>
+
+    </div>
+    <div class="scorebord" >
+        <div class="score">
+            <p id="users score">0</p>
+            <p>user</p>
+        </div>
+    </div>
+    <div class="scorebord">
+        <div class="score">
+            <p id="computers score" score">0</p>
+            <p>computer</p>
+        </div>
+    </div>
+    <div class="msgcontainear">
+        <p id="msg">play your move</p>
+    </div>
+     <script src="sps.js"></script>
+</body>
+</html>
+//sps.css
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: chartreuse;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+.choice{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.choice:hover{
+    opacity: 0.5;
+    background-color: black;
+}
+img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+     
+}
+.scorebord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+
+
+
+font-size: 2rem;
+}
+.msgcontainear{
+    
+    display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+}
+#users score,#computers score{
+    font-size: 4rem;
+
+}
+#msg{
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    padding: 1rem;
+    border-radius: 50%;
+}
