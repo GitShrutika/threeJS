@@ -1,0 +1,37 @@
+CREATE DATABASE bank;
+USE bank;
+CREATE TABLE customer(
+customerid INT PRIMARY KEY,
+name VARCHAR(50),
+mode VARCHAR(50),
+city VARCHAR(50)
+);
+
+INSERT INTO customer 
+(customerid , name, mode,city)
+VALUES
+(101,'shr','cash','pune'),
+(102,'shru','cash','mumbai'),
+(103,'shrt','card','indore'),
+(104,'shri','net','pune'),
+(105,'shrk','debit','delhi'),
+(106,'shra','cash','banglore'),
+(107,'shri','card','hyd'),
+(108,'shre','cash','pune'),
+(109,'shrs','net','mumbai'),
+(110,'shra','cash','delhi');
+SELECT mode ,COUNT(city)
+FROM customer
+GROUP BY mode
+HAVING MAX(customerid)>=106;
+SELECT city
+FROM customer
+WHERE mode="cash"
+GROUP BY city
+HAVING MAX(customerid) > 106;
+SET SQL_SAFE_UPDATES = 0;
+UPDATE customer 
+SET city="banglore"
+
+WHERE city="hyd";
+SELECT * FROM customer;
