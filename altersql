@@ -1,0 +1,26 @@
+CREATE DATABASE student;
+USE student;
+
+CREATE TABLE classroo(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+grade VARCHAR(2),
+mark INT
+);
+
+INSERT INTO classroo
+(id , name , grade, mark)
+VALUES
+(1,'sh','a',80),
+(2,'shru','b',90),
+(3,'shrut','c',91);
+
+ALTER TABLE classroo
+CHANGE name fullname VARCHAR(50);
+
+SELECT * FROM classroo;
+
+DELETE FROM classroo
+WHERE mark > 80;
+ ALTER TABLE classroo
+ DROP COLUMN grade;
