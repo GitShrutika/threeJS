@@ -13,3 +13,10 @@ WHERE (age) > 16;
 SELECT name ,age
 FROM std1
 WHERE age > (SELECT AVG(age) FROM student); 
+SELECT  name ,customerid
+FROM customer
+WHERE customerid IN (
+SELECT customerid
+from customer
+WHERE customerid % 2 =0);
+
