@@ -1,0 +1,15 @@
+SELECT city,avg(age)
+FROM std1
+GROUP BY city
+ORDER BY avg(age) DESC;
+
+SELECT AVG(age)
+FROM std1;
+
+SELECT name ,age
+FROM std1
+WHERE (age) > 16;
+
+SELECT name ,age
+FROM std1
+WHERE age > (SELECT AVG(age) FROM student); 
